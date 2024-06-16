@@ -1,7 +1,7 @@
- [[ "hello world" =~ "lo wor" ]];echo $?   --> pattern matching ( =~ )
-echo $?  --> shows the status code of the command or script
+# [[ "hello world" =~ "lo wor" ]];echo $?   --> pattern matching ( =~ )
+# echo $?  --> shows the status code of the command or script
 
-CODE:
+# CODE:
 
 #!/bin/bash
 
