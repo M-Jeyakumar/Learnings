@@ -1,3 +1,4 @@
+:'
 bash sees everything as string
 
 (( ... )) will perform a calculation or operation and output nothing.
@@ -5,9 +6,9 @@ $(( ... )) will replace the calculation with the result of it.
 
 (( NUMBER ))
 [[ $NUMBER ]]
+'
 
-
-CODE:
+# CODE:
 
 #!/bin/bash
 #Bingo Number Generator
