@@ -1,0 +1,43 @@
+Git & GitHub notes
+
+Commands:
+
+git clone origin_link - for cloning a repository
+
+git status - for viewing whether the modification are pushed to the repository or not /  for tracking the file status
+
+git add file_name - for tracking a file ( Untracked -> Added ) It will move the file from working directory to staging area
+
+git commit -m "message" - it moves the files from staging area to local git repository
+
+git push origin main - from local git repository to GitHub repository
+
+git pull - it will update the changes which is happened in the GitHub repository to an already cloned folder in our local machine ( only in the current branch ).
+
+git pull origin main - same but it will update the current branch from the main branch.
+
+git init - it will initialize a .git file which is used to convert a local folder into a git folder
+
+git remote add origin origin_link  it will add the GitHub origin to the local git folder which is initialized using "git init"
+
+git branch new_branch - it will create a new branch.
+
+git branch - show all the branches in that repository (mostly new repository have master branch)
+
+git branch -m old_name new_name - it will change the old branch name into new branch name (renaming)
+
+git checkout new_branch - to change from current branch to new branch in the repository
+
+if we push the files to a new_branch it will not be shown in another branches.
+
+git diff branch_name - it will display the differences between the main branch and other branches.
+
+git merge branch_name - it will merge the other branch with the main branch. after the merging part we have to push the file to the main branch of the online repository.
+
+term: origin - repository link
+
+term: branch - we use branches to edit and update the files in the repository without modifying the main code. For example a development team will create a new branch to add some extra features to a previous application. after the completion of the features they will merge the newly created features to the main branch.
+
+term: pull request - in most of the projects we don't have the access to the main branch. So we will create a pull request to the repository owner about our branch details and which we made in that branch. After the verification from the owner he/she will merge the code into the main branch.
+
+term: merge conflict -  it will arise when two developers trying to merge two different branches to the main branch. we have to resolve this manually.
