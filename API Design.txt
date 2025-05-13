@@ -1,0 +1,49 @@
+API Design
+
+-> Application Programming Interface
+
+Two types: REST API, GraphQL
+
+in graphQL we can fetch the data based on our needs(like required data only)
+
+but in rest API we will fetch all the datas(for fetching the required data we can use query parameters)
+
+Mostly we follow REST API - stateless
+
+Stateless in the sense the current API call doesn't have any knowledge about the previous API call. It's standalone calls.
+
+Uniform Interface - all the endpoints should have some base address
+
+Resource based - only the accepted file type (JSON/CSV) from both client and server can be transferred.
+
+Design:
+✅ Use Nouns (Ex: /food, /contact)
+✅ If we return collection of data the endpoint name should be in plural (Ex: /foods )
+
+HTTP Methods:
+get - to get data from a server
+post - to send or give some data to a server (only for the first time)
+put - to update an existing data (for updating whole data)
+patch - to update an existing data (but for a part of data not full)
+delete - to delete an existing data
+options - for sending certain options to a server
+
+path parameter - for getting a specific item  (Ex: /foods/:id ) here the id is the path parameter
+
+hierarchical API - /foods/:id/review (here the id is in the middle of the endpoint)
+
+query parameter - for getting some specific data ( Ex: /foods?category=${category}  -> in frontend API call)
+
+
+API Throttling - limiting the user request to the API
+
+pagination - it helps to retrieve the data in a limited way(like in a blog in the 1st page we will get 5 posts after go to the 2nd page we will get the next 5 posts)
+
+
+API versioning - 5 types
+
+website for free APIs: Rapid API
+
+softwares/tools:
+1. Postman - for verifying the API endpoints
+2. swagger - for documenting our endpoints
